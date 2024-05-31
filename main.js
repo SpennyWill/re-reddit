@@ -10,10 +10,10 @@ let post =  `"${postComment}" Posted by ${postAuthor}  `;
 
 
 
-let comment = document.createElement('p')
+let entry = document.createElement('p')
 
-document.getElementsByClassName('form-inline')[0].appendChild(comment)
-  comment.innerHTML = post; 
+let comment = document.getElementsByClassName('form-inline')[0].appendChild(entry)
+  entry.innerHTML = post; 
 
   document.getElementsByClassName('name')[0].value = ''
   document.getElementsByClassName('comment')[0].value ='' 
