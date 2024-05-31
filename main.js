@@ -18,3 +18,6 @@ let comment = document.getElementsByClassName('form-inline')[0].appendChild(entr
   document.getElementsByClassName('name')[0].value = ''
   document.getElementsByClassName('comment')[0].value ='' 
 }); 
+
+
+//Test for github
