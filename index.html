@@ -18,40 +18,28 @@
     <title>ReReddit</title>
   </head>
   <body>
-    <div class="pb-2 mt-4 mb-2 border-bottom">
-      <h1>ReReddit</h1>
-    </div>
-    <div class="container">
-
-    </div>
-    <div class="entry-form">
-    <form class="form-inline">
-      <div>
-        <input class="form-control post" type="text" placeholder="Enter Post" />
+      <div class="pb-2 mt-4 mb-2 border-bottom">
+          <h1>ReReddit</h1>
       </div>
-      <div>
-        <input class="form-control p-name" type="text" placeholder="Your Name" />
-      </div>
-      <button id="submit"  class="btn btn-primary mb-2">
-        Submit</button>
-     
-      <div class="comments">
-        <div>
-        <input class="form-control comment" type="text" placeholder="Your Reply"/>
-      </div>
-          <input class="form-control c-name" type="text" placeholder="Your Name" />
+      <div class="container">
+          <div class="entry-form">
+              <form class="form-inline">
+                  <input class="form-control post" type="text" placeholder="Enter Post" />
+                  <input class="form-control p-name" type="text" placeholder="Your Name" />
+                  <button id="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+                <form class="form-inline">
+              <div class="comments">
+                  <input class="form-control comment" type="text" placeholder="Your Reply"/>
+                  <input class="form-control c-name" type="text" placeholder="Your Name" />
+                  <button id="comment" class="btn btn-primary mb-2">Reply to Post</button>
+              </div>
+          </div>
+        </form>
+        <div class= "post-section">
+          <div class="comment-section"></div>
         </div>
       </div>
-        </div>
-        <div>
-        <button id="comment" class="btn btn-primary mb-2">Reply to Post</button>
-      </div>
-      </div>
-    </form>
-    <div class= "post-section">
-      <div class="comment-section"></div>
-    </div>
-  </div>
-  <script src="main.js"></script>
+      <script src="main.js"></script>
   </body>
-</html>
+  </html>
