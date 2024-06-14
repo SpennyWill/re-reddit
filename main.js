@@ -12,24 +12,21 @@ document.getElementById('submit').addEventListener('click', (event) => {
   entry.innerHTML = post;
 
   //Click to remove posts 
-  let removePost = document.createElement('button');
-  removePost.textContent = "Remove";
-  removePost.addEventListener('click', function() {
+  let removePostButton = document.createElement('button');
+  removePostButton.textContent = "Remove";
+  removePostButton.addEventListener('click', function() {
     removePost(entry.id)
   });
   
 //This decides where the post and removal button is going to display, as a child to each post 
   let createPost = document.getElementsByClassName('post-section')[0];
   createPost.appendChild(entry);
-  entry.appendChild(removePost);
+  entry.appendChild(removePostButton);
 
   //clear posts
   document.getElementsByClassName('entry-form')[0].value = '';
   
-  removePost.addEventListener("click", function() {
-    removePost(this.parentNode.id)
 
-  });
 });
 
 
@@ -57,11 +54,11 @@ document.getElementById('comment').addEventListener('click', (event) => {
   let removeComment = document.createElement('button');
   removeComment.textContent = "Remove";
   removeComment.addEventListener('click', function() {
-    document.getElementById(nextComment.id).remove();
+    document.getElementById(nextComment.remove());
   });
   //Position where the comment and remove botton will go
   let commentArea = document.getElementsByClassName('comment-section')[0];
-  createPost.appendChild(nextComment);
+  commentArea.appendChild(nextComment);
   nextComment.appendChild(removeComment);
 
 
